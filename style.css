@@ -9,5 +9,17 @@ a:hover {
     font-family: cursive;
 }
 div#kadai {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 300px;
+	width: 1000px;
+	grid-gap: 20px;
+}
+
+div#kadai > div {
+    background-color: #ffd795;
+    border-bottom: 15px inset #ffff00;
+    border-left: 15px inset #00ff00;
+    border-right: 15px inset #0000ff;
+    border-top: 15px inset red;
 }
