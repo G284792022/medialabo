@@ -1,0 +1,28 @@
+
+tbody {
+    font-size:50px;
+}
+table,th,td {
+    border: 5px solid #000;
+}
+.tosi {
+    font-size: 150px;
+}
+div#w {
+    display:flex;
+    gap: 40px;
+}
+
+#saikou{
+    color: red;
+}
+#saitei{
+    color: Blue;
+}
+#aaa{
+    width: 100%;
+  height: 800px;
+    background:linear-gradient(to right, #2af598 0%, #fd00ba 100%);
+}
+
+
