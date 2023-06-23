@@ -48,8 +48,6 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 
 console.log(data.name);
-data
-cosole.log(data.weather[0].description);
 console.log(data.weather[0].description);
 console.log(data.coord.lon); 
 console.log(data.coord.lat); 
