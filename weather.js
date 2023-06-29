@@ -56,3 +56,5 @@ console.log(data.main.temp_min);
 console.log(data.main.humidity); 
 console.log(data.wind.speed); 
 console.log(data.wind.deg);
+
+let div = document.querySelector('div#result');
