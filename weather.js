@@ -58,9 +58,15 @@ console.log(data.wind.speed);
 console.log(data.wind.deg);
 
 let div = document.querySelector('div#result');
+
+let k =document.createElement("p");
+k.textContent = '世界の天気(検索結果1件)';
+div.insertAdjacentElement('beforeend',k);
+
 let divw = document.createElement("div");
 divw.id = 'w';
 let di = document.createElement("div");
+
 let p =document.createElement("p");
 p.id = 'tosi';
 p.textContent = data.name;
