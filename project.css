@@ -3,14 +3,15 @@ tbody {
     font-size:50px;
 }
 table,th,td {
-    border: 5px solid #000;
+    border: 5px solid #ffffff;
 }
-.tosi {
+#tosi {
+    writing-mode: vertical-rl;
     font-size: 150px;
 }
 div#w {
     display:flex;
-    gap: 40px;
+    gap: 200px;
 }
 
 #saikou{

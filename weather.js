@@ -58,3 +58,101 @@ console.log(data.wind.speed);
 console.log(data.wind.deg);
 
 let div = document.querySelector('div#result');
+let divw = document.createElement("div");
+divw.id = 'w';
+let di = document.createElement("div");
+let p =document.createElement("p");
+p.id = 'tosi';
+p.textContent = data.name;
+
+di.insertAdjacentElement('beforeend',p);
+divw.insertAdjacentElement('beforeend',di);
+
+di = document.createElement("div");
+let table = document.createElement("table");
+let tbody = document.createElement("tbody");
+
+let tr = document.createElement("tr");
+let th = document.createElement("th");
+th.textContent = '天気';
+tr.insertAdjacentElement('beforeend',th);
+let td = document.createElement("td");
+td.textContent = data.weather[0].description;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.textContent = '緯度';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.coord.lon;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.textContent = '経度';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.coord.lat;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.id = 'saikou'
+th.textContent = '最高気温';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.main.temp_max;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.id = 'saitei'
+th.textContent = '最低気温';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.main.temp_min;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.textContent = '湿度';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.main.humidity;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.textContent = '風速';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.wind.speed;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+tr = document.createElement("tr");
+th = document.createElement("th");
+th.textContent = '風向';
+tr.insertAdjacentElement('beforeend',th);
+td = document.createElement("td");
+td.textContent = data.wind.deg;
+tr.insertAdjacentElement('beforeend',td);
+tbody.insertAdjacentElement('beforeend',tr);
+
+
+
+
+table.insertAdjacentElement('beforeend',tbody);
+di.insertAdjacentElement('beforeend',table);
+divw.insertAdjacentElement('beforeend',di);
+
+div.insertAdjacentElement('beforeend',divw);
+
+
