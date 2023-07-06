@@ -12,9 +12,12 @@ a:hover {
 div#kadai {
     display: grid;
     grid-template-columns: 1fr 1fr;
-	grid-auto-rows: 300px;
-	width: 1000px;
-	grid-gap: 20px;
+	width: 70%;
+	grid-gap: 50px;
+    margin-top: 50px;
+    margin-left:15%;
+    margin-bottom:50px;
+    
 }
 
 div#kadai > div {
@@ -23,16 +26,19 @@ div#kadai > div {
     border-left: 15px inset #00ff00;
     border-right: 15px inset #0000ff;
     border-top: 15px inset red;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 70px;
+    padding-top: 10px;
 }
 
 div#kai{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 300px;
     width: 100%;
     grid-gap: 15px;
-    box-align:center;
 }
+
 div#kai > div {
     border-bottom:15px groove #383737;
     background-color: #8484c9;
