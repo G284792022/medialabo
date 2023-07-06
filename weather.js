@@ -47,6 +47,15 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
+let b = document.querySelector('#kensaku');
+b.addEventListener('click', kensaku);
+
+function kensaku() { 
+  let i = document.querySelector('input[name="tosi"]');
+  let tosi = i.value;
+  console.log(tosi);
+}  
+
 console.log(data.name);
 console.log(data.weather[0].description);
 console.log(data.coord.lon); 
@@ -160,5 +169,3 @@ di.insertAdjacentElement('beforeend',table);
 divw.insertAdjacentElement('beforeend',di);
 
 div.insertAdjacentElement('beforeend',divw);
-
-
