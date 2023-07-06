@@ -51,9 +51,12 @@ let b = document.querySelector('#kensaku');
 b.addEventListener('click', kensaku);
 
 function kensaku() { 
-  let i = document.querySelector('input[name="tosi"]');
-  let tosi = i.value;
-  console.log(tosi);
+  let i = document.querySelectorAll('input[name="tosi"]');
+  for (let r of i) {
+    if (r.checked) {        
+      console.log(r.value);
+    }
+  }
 }  
 
 console.log(data.name);
