@@ -52,12 +52,34 @@ b.addEventListener('click', kensaku);
 
 function kensaku() { 
   let i = document.querySelectorAll('input[name="tosi"]');
+  let t;
   for (let r of i) {
     if (r.checked) {        
       console.log(r.value);
+      t = r.value;
     }
   }
-}  
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + t + '.json';
+
+  axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);      // 通信の最後の処理
+
+}
+
+function showResult(resp) {
+
+let div = document.querySelector('div#result');
+div.textContent = "";
+
+
+
+let data = resp.data;
+
+if (typeof data === 'string') {
+  data = JSON.parse(data);
+}
 
 console.log(data.name);
 console.log(data.weather[0].description);
@@ -69,7 +91,7 @@ console.log(data.main.humidity);
 console.log(data.wind.speed); 
 console.log(data.wind.deg);
 
-let div = document.querySelector('div#result');
+div = document.querySelector('div#result');
 
 let k =document.createElement("p");
 k.textContent = '世界の天気(検索結果1件)';
@@ -172,3 +194,13 @@ di.insertAdjacentElement('beforeend',table);
 divw.insertAdjacentElement('beforeend',di);
 
 div.insertAdjacentElement('beforeend',divw);
+
+}
+
+function showError(err) {
+  console.log(err);
+}
+
+function finish() {
+  console.log('Ajax 通信が終わりました');
+}

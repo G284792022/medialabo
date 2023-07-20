@@ -10,8 +10,10 @@ table,th,td {
     font-size: 150px;
 }
 div#w {
-    display:flex;
-    gap: 200px;
+    /* display:flex;
+    gap: 200px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #saikou{
