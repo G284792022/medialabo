@@ -1,13 +1,13 @@
 a:link {
-    color: #ff0000;
+    color: #ff9500;
 }
 a:visited {
-    color: #00ff00;
+    color: #f13e3e;
 }
 
 a:hover {
     font-family: cursive;
-    background:#ffff00;
+    background:#000000;
 }
 div#kadai {
     display: grid;
@@ -35,20 +35,35 @@ div#kadai > div {
 div#kai{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    width: 90%;
     grid-gap: 15px;
+    margin-left: 5%;
 }
 
 div#kai > div {
     border-bottom:15px groove #383737;
     background-color: #8484c9;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
     font-size:70px;
-    background-color: #00c3ffe0
+    background-color: #00c3ffe0;
+    padding-left: 8%;
+}
+
+#moku{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size:large;
 }
 
 .kadaitai,h3{
     text-align:center;
+}
+
+.kugi{
+    text-align:center;
+    font-size:50px;
 }
