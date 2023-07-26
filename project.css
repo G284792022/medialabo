@@ -6,6 +6,7 @@ table,th,td {
     border: 5px solid #ffffff;
 }
 #tosi {
+    margin-top: 0px;
     writing-mode: vertical-rl;
     font-size: 150px;
 }

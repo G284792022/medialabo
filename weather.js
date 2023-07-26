@@ -93,9 +93,9 @@ console.log(data.wind.deg);
 
 div = document.querySelector('div#result');
 
-let k =document.createElement("p");
-k.textContent = '世界の天気(検索結果1件)';
-div.insertAdjacentElement('beforeend',k);
+// let k =document.createElement("p");
+// k.textContent = '世界の天気(検索結果1件)';
+// div.insertAdjacentElement('beforeend',k);
 
 let divw = document.createElement("div");
 divw.id = 'w';
