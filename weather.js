@@ -100,6 +100,35 @@ let p =document.createElement("p");
 p.id = 'tosi';
 p.textContent = data.name;
 
+let i = document.querySelectorAll('input[name="tosi"]');
+  let t;
+  for (let r of i) {
+    if (r.checked) {        
+      console.log(r.value);
+      t = r.value;
+    }
+  }
+  if(t === '2968815' || t === '3451189'){
+    p.style.writingMode='horizontal-tb';
+    if(t === '3451189'){
+      p.style.marginTop='0';
+    }
+  }
+else if(t === '993800'){
+  p.style.fontSize='100px';
+  p.style.marginLeft='40%';
+}
+else if(t === '1880252' || t === '5128581' || t === '5368361'){
+  p.style.fontSize='130px';
+  p.style.marginLeft='40%';
+}
+else{
+  p.style.marginLeft='40%';
+}
+
+// p.style.text='mixed';
+// p.style.font='100px';
+
 di.insertAdjacentElement('beforeend',p);
 divw.insertAdjacentElement('beforeend',di);
 
