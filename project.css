@@ -1,3 +1,20 @@
+h1{
+    margin-top:14%;
+    text-align:center;
+    font-size:80px;;
+    color:rgb(153, 0, 255);
+}
+button{
+    margin-left:46%;
+    margin-bottom:30px;
+}
+#i{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left:15%;
+    margin-bottom:40px;
+    
+}
 
 tbody {
     font-size:50px;
@@ -6,13 +23,10 @@ table,th,td {
     border: 5px solid #ffffff;
 }
 #tosi {
-    margin-top: 0px;
-    writing-mode: vertical-rl;
+    margin-top: 40px;
     font-size: 150px;
 }
 div#w {
-    /* display:flex;
-    gap: 200px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

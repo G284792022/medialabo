@@ -92,11 +92,6 @@ console.log(data.wind.speed);
 console.log(data.wind.deg);
 
 div = document.querySelector('div#result');
-
-// let k =document.createElement("p");
-// k.textContent = '世界の天気(検索結果1件)';
-// div.insertAdjacentElement('beforeend',k);
-
 let divw = document.createElement("div");
 divw.id = 'w';
 let di = document.createElement("div");
@@ -194,6 +189,9 @@ di.insertAdjacentElement('beforeend',table);
 divw.insertAdjacentElement('beforeend',di);
 
 div.insertAdjacentElement('beforeend',divw);
+
+let h1 = document.querySelector('h1');		
+h1.style.margin= '0px'; 
 
 }
 

@@ -28,7 +28,7 @@ div#kadai > div {
     border-top: 15px inset red;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     padding-top: 10px;
 }
 
@@ -53,6 +53,10 @@ h1 {
     padding-left: 8%;
 }
 
+p{
+    font-size:large;
+}
+
 #moku{
     padding-left: 10%;
     padding-right: 10%;
@@ -66,4 +70,13 @@ h1 {
 .kugi{
     text-align:center;
     font-size:50px;
+    text-decoration-line:underline;
+    text-decoration-color:#f360f0;
+}
+
+#kan{
+    width:80%;
+    margin-left:10%;
+    padding:10px;
+    background-color: #f8f0a4e0;
 }
