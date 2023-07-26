@@ -111,40 +111,40 @@ let i = document.querySelectorAll('input[name="tosi"]');
 
 let img = document.createElement("img");
 if(t === '360630'){
-  img.src = 'Egypt.png';
+  img.src = "Egypt.png";
 }
 else if(t === '524901'){
-  img.src = 'Russia.png';
+  img.src = "Russia.png";
 }
 else if(t === '993800'){
-  img.src = 'South-Africa.png';
+  img.src = "South-Africa.png";
 }
 else if(t === '1816670'){
-  img.src = 'China.png';
+  img.src = "China.png";
 }
 else if(t === '1850147'){
-  img.src = 'Japan.png';
+  img.src = "Japan.png";
 }
 else if(t === '1880252'){
-  img.src = 'Singapore.png';
+  img.src = "Singapore.png";
 }
 else if(t === '2147714'){
-  img.src = 'Australia.png';
+  img.src = "Australia.png";
 }
 else if(t === '2643743'){
-  img.src = 'United-Kingdom.png';
+  img.src = "United-Kingdom.png";
 }
 else if(t === '2968815'){
-  img.src = 'France.png';
+  img.src = "France.png";
 }
 else if(t === '3451189'){
-  img.src = 'Brazil.png';
+  img.src = "Brazil.png";
 }
 else if(t === '5128581'){
-  img.src = 'United-States-of-America.png';
+  img.src = "United-States-of-America.png";
 }
 else{
-  img.src = 'United-States-of-America.png';
+  img.src = "United-States-of-America.png";
 }
 div.insertAdjacentElement('beforeend',img);
 
